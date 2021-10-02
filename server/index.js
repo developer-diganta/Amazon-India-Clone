@@ -18,10 +18,7 @@ const stripe = require('stripe')(process.env.SK_TEST)
 const endpointSecret = process.env.SECRET;
 
 const url="mongodb+srv://"+process.env.MONGO_USERNAME+":"+process.env.MONGO_PASSWORD+"@cluster0.mlb5l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-console.log(url);
 mongoose.connect(url,{useNewUrlParser: true});
-const { OAuth2Client } = require('google-auth-library');
-const { hasBrowserCrypto } = require('google-auth-library/build/src/crypto/crypto');
 const userSchema = new mongoose.Schema({
     email:String,
     password:String,
@@ -34,10 +31,7 @@ const userSchema = new mongoose.Schema({
 
 const User=mongoose.model("User",userSchema);
 const author = (req, res, next) => {
-    // const token = req.headers("Authorization");
-    console.log("asdsadsadassaddsdas",req.body.user);
     const token =  req.body.user?req.body.user.data.token:null;
-    console.log(token)
     if(!token){
         console.log("need token!")
         res.send("Need a token");
