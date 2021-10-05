@@ -299,7 +299,17 @@ export default function Header(){
                     <p className="text-sm font-bold">& Orders</p>
                 </Link>   
                 <div className="xl:right-8 xl:absolute  text-white w-auto ml-9 my-auto xl:ml-0">
-                    <div className="flex items-center relative ">
+                    <div className="flex items-center relative mt-2">
+                        <div className="hidden xl:block right-0 mr-3">
+                        
+                            {u?
+                                <span className="text-sm font-semibold" onClick={logout}>{JSON.parse(u).data.result.name.split(" ")[0]}</span>:user?  <span className="text-sm font-semibold" onClick={logout}>{user.data.result.name.split(" ")[0]}</span>
+                    :
+                    <span onClick={()=>history.push("/signin")} className="text-xs cursor-pointer hover:underline">Sign In</span>     
+                    
+                    }
+                        > <i className="fas fa-user text-xl"></i>
+                        </div>
                         <Link to="/cart">
                             <span className=" top-0 absolute w-4 h-4 right-6  xl:right-0 text-xs text-center font-bold  rounded-full bg-cart_color" style={{borderRadius:"50%"}}>{cartItems}</span>        
                             <i className="fas fa-shopping-cart text-3xl "></i>
@@ -307,6 +317,7 @@ export default function Header(){
                         </Link>          
                     </div>
                 </div>
+ 
             </div>
             <div className="lgsc:hidden bg-amazon_blue pb-3 " style={{width:"100%"}}>
                 <div className="text-center">
@@ -346,7 +357,7 @@ export default function Header(){
                     <Link to="/" className="text-white p-1 pl-3 hover:underline pr-3 text-sm font-medium">AmazonBasics</Link>
                 </div>
                 <span className="right-2 xl:hidden text-white font-medium absolute">
-                    <img src={App} alt="App" className="inline" style={{width:"22px",height:"22px"}} /> Shopping Made Easy | Download The App
+                    <img src={App} alt="App" className="inline" style={{width:"22px",height:"22px"}} /> Download The App
                 </span>
             </div> 
             <div className="lgsc:hidden w-full flex bg-amazon_blue-light p-1">
