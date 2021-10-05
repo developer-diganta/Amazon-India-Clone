@@ -88,7 +88,7 @@ function AddedToCart() {
                     <div className="text-right">
                         <div>
                             <button className="bg-gradient-to-t from-gray-300 to-white p-3 text-xs rounded mr-3" style={{border:"1px solid black"}} >Cart</button>
-                            <button className="p-3 text-xs rounded bg-gradient-to-t from-others-proceed mr-2 to-others-proceed2" style={{border:"1px solid black"}}>{user?"Proceed To Buy":"Sign In"} ({totalItems.length} items)</button>
+                            <Link to="/cart"><button className="p-3 text-xs rounded bg-gradient-to-t from-others-proceed mr-2 to-others-proceed2" style={{border:"1px solid black"}}>{user?"Proceed To Buy":"Sign In"} ({totalItems.length} items)</button></Link>
                         </div>
                     </div>
                 </div>

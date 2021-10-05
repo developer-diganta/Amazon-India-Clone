@@ -7,7 +7,7 @@ function Account() {
                 <div className="pt-3 pl-3 text-2xl">
                     Your Account
                 </div>
-                <div className="grid grid-flow-col grid-cols-6">
+                <div className="grid grid-flow-col grid-cols-6 xl:block">
                     <div className="col-span-2 rounded  m-4 hover:bg-gray-100" style={{border:"1px solid lightgray"}}>
                         <div className="p-2 pt-6 pb-8 my-auto">
                             <img src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/Box._CB485927553_.png" alt="Amazon Box" style={{height:"45px",width:"60px",display:"inline-block"}} />
@@ -36,7 +36,7 @@ function Account() {
                         </div>
                     </div>    
                 </div>
-                <div className="grid grid-flow-col grid-cols-6 border-b-2 border-gray-200">
+                <div className="grid grid-flow-col grid-cols-6 border-b-2 border-gray-200 xl:block">
                     
                     <div className="col-span-2 rounded  m-4 hover:bg-gray-100" style={{border:"1px solid lightgray"}}>
                         <Link to="/address">
@@ -69,7 +69,7 @@ function Account() {
                     </div>
                 </div>
 
-                <div className="grid grid-flow-col grid-cols-6">
+                <div className="grid grid-flow-col grid-cols-6 xl:block">
                     <div className="col-span-2 rounded  m-4 hover:bg-gray-100" style={{border:"1px solid lightgray"}}>
                         <div className="p-2 pt-3 my-auto">
                             <div className="font-bold">Digital content and devices</div>
@@ -105,7 +105,7 @@ function Account() {
                         </ul>
                     </div>  
                 </div>
-                <div className="grid grid-flow-col grid-cols-6">
+                <div className="grid grid-flow-col grid-cols-6 xl:block">
                     <div className="col-span-2 rounded  m-4 hover:bg-gray-100" style={{border:"1px solid lightgray"}}>
                         <div className="p-2 pt-3 my-auto">
                             <div className="font-bold">Ordering and shopping preferences</div>
@@ -141,7 +141,7 @@ function Account() {
                         </ul>
                     </div>  
                 </div>
-                <div className="grid grid-flow-col grid-cols-6">
+                <div className="grid grid-flow-col grid-cols-6 xl:block">
                     <div className="col-span-2 rounded  m-4 hover:bg-gray-100" style={{border:"1px solid lightgray"}}>
                         <div className="p-2 pt-3 my-auto">
                             <div className="font-bold">Subscriptions</div>
