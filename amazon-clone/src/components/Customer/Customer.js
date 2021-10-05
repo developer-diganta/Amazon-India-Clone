@@ -72,7 +72,7 @@ export default function Customer() {
         <>
         <div className="bg-white pt-4 pb-10" style={{minHeight:"85vh"}}>
         {/* Mobile View */}
-
+        <div className="hidden xl:block">
         <div className={`${mobTrack?"hidden":"block"}`}>
             {purchase?purchase.slice(0).reverse().map((x)=>{
                 return x.purchase.map((y)=>{
@@ -131,8 +131,8 @@ export default function Customer() {
                     </div>
                     <span className="ml-10 absolute" style={{color:`${dateDiff>0?"#7b7f7a":"black"}`,width:"65vw"}}>Out For Delivery</span>
                 </div>
-</div>
-{/* <div className="relative" style={{height:"150px",width:"5px",backgroundColor:"yellow"}}> */}
+            </div>
+            {/* <div className="relative" style={{height:"150px",width:"5px",backgroundColor:"yellow"}}> */}
                 <div className="absolute">
                     <div className="absolute " style={{width:"25px",height:"25px",left:"-10px",backgroundColor:`${dateDiff<=0?dateDiff===0?"#e9e7e7":"#52c2b4":"#e9e7e7"}`}}>
                         <span><i className="fas fa-check inline text-white " style={{fontSize:"23px",paddingTop:""}}></i></span>
@@ -157,6 +157,8 @@ export default function Customer() {
           
         </div>
     </div>
+        </div>
+        
             <div className={` xl:hidden grid grid-cols-12 ${!track?"":"hidden"}`}>
                 <div className="col-span-2"></div>
                 <div className="col-span-8">
