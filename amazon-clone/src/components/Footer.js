@@ -206,7 +206,7 @@ function Footer() {
                                     <li className="p-2">Your Amazon.in</li>
                                     <li className="p-2">Amazon Pay</li>
                                     <li className="p-2">Wish List</li>
-                                    <li className="p-2">Your Account</li>
+                                    <li className="p-2"><Link to="/account">Your Account</Link></li>
                                     <li className="p-2">Returns</li>
                                     <li className="p-2">Customer Service</li>
                                     <li className="p-2">Go to Desktop Site</li>
@@ -214,7 +214,7 @@ function Footer() {
                             </div>
                             <div>
                                 <ul className="list-none">
-                                    <li className="p-2">Your Orders</li>
+                                    <li className="p-2"><Link to="/messagecenter">Your Orders</Link></li>
                                     <li className="p-2">Amazon App Download</li>
                                     <li className="p-2">Find a Wish List</li>
                                     <li className="p-2">Your Recently Viewed Items</li>
