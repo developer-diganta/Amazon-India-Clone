@@ -1,7 +1,7 @@
 
 # Amazon India Clone
 
-This is a clone website of Amazon India made using MERN stack.
+This is a clone website of Amazon India made using MERN stack. CURRENTLY UNDER MIGRATION FROM HEROKU.
 
 
 
